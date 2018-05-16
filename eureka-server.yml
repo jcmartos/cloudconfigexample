@@ -2,12 +2,12 @@ server:
   port: ${EUREKA_SERVER_PORT:1111}   # HTTP port
   
 logging:
-  file: logs/${spring.application.name}.log
+  file: logs/eurka.log
   level:
     com.netflix.discovery: 'OFF'
     org.springframework.cloud: 'INFO'
     org.springframework.web: 'INFO'
-    com.atsistemas: 'DEBUG'
+    com.example.demo: 'DEBUG'
 
 # Configure this Discovery Server
 eureka:
