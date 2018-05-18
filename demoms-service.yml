@@ -1,12 +1,12 @@
 # HTTP Server
 server:
-  port: ${PORT:3333}   # HTTP port
+  port: 3333   # HTTP port
 
 # Discovery Server Access
 eureka:
   client:
     serviceUrl:
-      defaultZone: ${EUREKA_ENDPOINT}
+      defaultZone: http://localhost:1111/eureka/
 
 logging:
   file: logs/${spring.application.name}.log
